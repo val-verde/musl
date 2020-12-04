@@ -186,6 +186,7 @@ extern int optreset;
 
 #ifdef _GNU_SOURCE
 extern char **environ;
+extern char **__environ;
 int setresuid(uid_t, uid_t, uid_t);
 int setresgid(gid_t, gid_t, gid_t);
 int getresuid(uid_t *, uid_t *, uid_t *);

@@ -271,6 +271,7 @@ typedef void (*sig_t)(int);
 
 #ifdef _GNU_SOURCE
 typedef void (*sighandler_t)(int);
+typedef sighandler_t __sighandler_t;
 void (*bsd_signal(int, void (*)(int)))(int);
 int sigisemptyset(const sigset_t *);
 int sigorset (sigset_t *, const sigset_t *, const sigset_t *);
